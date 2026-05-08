@@ -355,7 +355,7 @@ ul.tab-switch li.active a:after { content: '';
     outline: none; }
 .login-right form .form-group select { outline: none;
     width: 100%;
-    background-image: url(../../../img/apptype/XJP/select-arrow.jpg);
+    background-image: url(../img/select-arrow.jpg);
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 11px;
@@ -575,7 +575,7 @@ article.inverse .article-image:after { padding-right: 178px;
     font-family: var(--common_font); }
 .contact-section form .form-group select { outline: none;
     width: 100%;
-    background-image: url(../../../img/apptype/XJP/select-arrow.jpg);
+    background-image: url(../img/select-arrow.jpg);
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 11px; }
@@ -2001,7 +2001,7 @@ header.fixed.loggedin .navmenu-links .dropdown-content .column a:hover { float: 
     position: absolute;
     right: 0;
     top: 0;
-    background-image: url(../../../img/apptype/XJP/drop_arrow.svg);
+    background-image: url(../img/drop_arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 14px;
@@ -2013,7 +2013,7 @@ header.fixed.loggedin .navmenu-links .dropdown-content .column a:hover { float: 
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url(../../../img/apptype/XJP/locate.svg);
+    background-image: url(../img/locate.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 20px;
@@ -2043,7 +2043,7 @@ header.fixed.loggedin .navmenu-links .dropdown-content .column a:hover { float: 
     -o-transition: all 0.5s;
     z-index: 1; }
 .location-area form .element-holder.address-input button[type="submit"]::after { content: '';
-    background-image: url(../../../img/apptype/XJP/locate-go.svg);
+    background-image: url(../img/locate-go.svg);
     position: absolute;
     left: 0;
     top: 0;
@@ -2054,7 +2054,7 @@ header.fixed.loggedin .navmenu-links .dropdown-content .column a:hover { float: 
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center; }
-.element-holder.address-input .search-location:after { background-image: url(../../../img/apptype/XJP/locate-go.svg);
+.element-holder.address-input .search-location:after { background-image: url(../img/locate-go.svg);
     z-index: 1;
     width: 73px;
     background-position: center;
