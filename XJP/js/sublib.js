@@ -81,10 +81,10 @@ class DisplayXCls {
         images.forEach((img) => {
             const retinaSrc = img.getAttribute('data-retina-src');
             if (this.isRatinaDisplay == "true" && retinaSrc != '' && retinaSrc != null) {
-                //console.log(retinaSrc);
+                
                 // For Retina displays, use the higher resolution image
                 img.src = retinaSrc;
-                //console.log(img.src);
+                
             } /*else {
                 // Reset to the original image if not Retina
                 const originalSrc = img.src; // Remove any query params from the current src
@@ -245,9 +245,6 @@ function AOT6KSNzku() {
     }
 }
 function SetSysCookie(cname, cvalue, exdays) {
-
-    console.log("hellooo setsyscookie");
-    return false;
     "use strict";
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -341,7 +338,7 @@ $(document).ready(function () {
     if ($("form[name='contactform'] .form-group").length > 0) {
         $("form[name='contactform'] .form-group").each(function (index) {
             $this = $(this).find('input');
-            //console.log($this.val());
+            
             if ($this.val() != "") {
                 $this.closest('.form-group').addClass('floating');
             } else {
@@ -467,10 +464,6 @@ function updateDivBackgrounds(className, attrName, width, height, place, backGro
     var resizeHeight = height * 1.25;
 
 
-    console.log("======");
-    console.log(isRatinaDisplay);
-    console.log("======");
-
     if (isRatinaDisplay === true) {
         resizeWidth = width * 2;
         resizeHeight = height * 2;
@@ -549,7 +542,7 @@ function resizeImage(className, attrName, place, backGroundPlace = 'Grey', Allow
             var width = document.querySelector("." + className).offsetWidth;
             var height = document.querySelector("." + className).getBoundingClientRect().height;
 
-            console.log(className , width, height );
+        
             if ((width < 20 || height < 15) && WaitForArea === "No") {
                 updateDivBackgrounds(className, attrName, width, height, place, backGroundPlace, AllowImageSpace, 'No', options);
                 clearInterval(intervalId);
@@ -838,8 +831,7 @@ class NumberFormatter {
         const oldLength = oldRawValue111.length;
         const prvvalueLength = $input.attr('pre-val').length;
         const newLength = newFormattedValue.length;
-        // console.log('prvvalueLength : ' + prvvalueLength);
-        // console.log('newLength :' + newLength);
+    
         let inputval = $input.val();
         cursorPositionBeforeText = inputval.slice(0, cursorPosition);
         let NewCount = this.totalPointCommas(cursorPositionBeforeText);
@@ -852,14 +844,14 @@ class NumberFormatter {
         } else {
             cPlus = NewCount;
         }
-        //  console.log('cPlus1 :' + cPlus);
+       
+
         if (cPlus < 0) {
             cPlus = 0;
         }
-        // console.log('cursorPosition : ' + cursorPosition);
-        // console.log('cPlus :' + cPlus);
+       
         let tCursorPosition = cursorPosition + cPlus;
-        //   console.log('tCursorPosition : ' + tCursorPosition);
+        
         if (prvvalueLength > newLength) {
             let NewCount = this.totalPointCommas(inputval);
             let oldCount = this.totalPointCommas($input.attr('pre-val'));
@@ -882,13 +874,13 @@ class NumberFormatter {
 
     totalPointCommas(number) {
         if (this.thousandsSep == ',') {
-            //console.log('number : ' + number);
+            
             var commas = number.match(/,/g);
-            //  console.log('commas : ' + commas);
+            
         } else {
-            //  console.log('number : ' + number);
+            
             var commas = number.match(/\./g);
-            // console.log('commas : ' + commas);
+            
         }
         var commaCount = commas ? commas.length : 0;
         /* var periods = number.match(/\./g);
