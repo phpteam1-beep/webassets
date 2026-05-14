@@ -3313,7 +3313,7 @@ header.fixed.loggedin .navmenu-links .dropdown-content .column a:hover {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url(../img/locate-go.svg);
+    background-image: url(../img/locate.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 20px;
